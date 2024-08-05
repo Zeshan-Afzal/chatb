@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react'
 import {io} from 'socket.io-client'
 
 
-const socket= io("http://localhost:3000/")
+const socket= io("https://chats-tau.vercel.app")
 function App() {
 
   const [sendMessage, setSendMessage]=useState("")
