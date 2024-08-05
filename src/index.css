@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.w-full {
+    width: 100%;
+  }
+  
+  .message {
+    display: flex;
+    justify-content: flex-start; /* Default to left alignment */
+    margin: 10px 0;
+  }
+  
+  .message.right {
+    justify-content: flex-end; /* Align to the right */
+  }
+  
+  .message span {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f1f1f1; /* Light background for messages */
+  }
+  
+  .message.left span {
+    background-color: #e0e0e0; /* Different color for left-aligned messages */
+  }
+  
+  .message.right span {
+    background-color: #007bff; /* Different color for right-aligned messages */
+    color: #fff; /* White text for right-aligned messages */
+  }
