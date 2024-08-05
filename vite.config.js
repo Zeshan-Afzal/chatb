@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/socket.io': {
-        target: 'https://chats-tau.vercel.app',
+        target: 'https://chats-tau.vercel.app/socket.io',
         changeOrigin: true,
         secure: false,
         rewrite: (path) => path.replace(/^\/socket.io/, '/socket.io')
