@@ -59,7 +59,7 @@ function App() {
     <div className=' w-full  overflow-auto h-full'>
      {messages && messages.length>0 &&  messages.map((msg, i)=>(
       <div className={`message ${msg.id===user ? 'right' : 'left'}`}>
-      <span >{msg.message} {msg.id}</span>
+      <span >{msg.message}</span>
 
       </div>
      ))}
