@@ -60,7 +60,7 @@ function App() {
     <div className=' w-full  overflow-auto h-full'>
      {messages && messages.length>0 &&  messages.map((msg, i)=>(
       <div className={`message ${msg.id===user ? 'right' : 'left'} `}>
-      <span  className=' relative border border-r-red-400'> <p className=' font-semibold text-gray-400 text-[10px] text-left inline absolute top-[40px] left-2  '>{`${msg.name===name?"You":`${msg.name}` }`}</p> {msg.message} </span>
+      <span  className=' relative border border-r-red-400'> <p className=' font-semibold text-gray-400 text-[10px] text-left inline absolute top-[42px] left-2  '>{`${msg.name===name?"You":`${msg.name}` }`}</p> {msg.message} </span>
 
       </div>
      ))}
