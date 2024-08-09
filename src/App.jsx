@@ -2,7 +2,11 @@ import React, { useEffect, useMemo, useState } from 'react'
 import {io} from 'socket.io-client'
 
 
-const socket= io("/socket.io")
+const socket = io("https://7548-223-123-5-139.ngrok-free.app", {
+  extraHeaders: {
+      "ngrok-skip-browser-warning": "any-value"
+  }
+});
 function App() {
 
   const [sendMessage, setSendMessage]=useState("")
